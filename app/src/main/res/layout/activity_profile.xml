@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imgUsuario"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/nameUser1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey_5"
+        android:gravity="center_horizontal"
+        android:text="Nombre"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/nameUser"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@color/grey_5"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/emailUser1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey_5"
+        android:gravity="center_horizontal"
+        android:text="Correo Electrónico"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/emailUser"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@color/grey_5"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/blue_app"
+        android:onClick="cambiarContraseña"
+        android:text="Cambiar Contraseña"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</LinearLayout>

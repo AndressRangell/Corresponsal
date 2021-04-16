@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_fragments"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.corresponsal.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/idDrawal"
+            app:destination="@id/drawalFragment" />
+        <action
+            android:id="@+id/idBalance"
+            app:destination="@id/balanceFragment" />
+        <action
+            android:id="@+id/idConsign"
+            app:destination="@id/consignFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.example.corresponsal.fragments.BalanceFragment"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_balance" >
+        <action
+            android:id="@+id/idAnswer"
+            app:destination="@id/answerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consignFragment"
+        android:name="com.example.corresponsal.fragments.ConsignFragment"
+        android:label="fragment_consign"
+        tools:layout="@layout/fragment_consign" >
+        <action
+            android:id="@+id/idAnswer"
+            app:destination="@id/answerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawalFragment"
+        android:name="com.example.corresponsal.fragments.DrawalFragment"
+        android:label="fragment_drawal"
+        tools:layout="@layout/fragment_drawal" >
+        <action
+            android:id="@+id/idAnswer"
+            app:destination="@id/answerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/answerFragment"
+        android:name="com.example.corresponsal.fragments.AnswerFragment"
+        android:label="fragment_answer"
+        tools:layout="@layout/fragment_answer" >
+        <action
+            android:id="@+id/idMenu"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>

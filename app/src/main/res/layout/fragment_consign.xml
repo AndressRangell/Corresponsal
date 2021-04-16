@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ConsignFragment">
+
+    <EditText
+        android:id="@+id/txtCountConsign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp"
+        android:hint="Número de cuenta"
+        android:textSize="25sp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/txtCardConsign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="120dp"
+        android:hint="Cédula de quien consigna"
+        android:textSize="25sp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/txtAmountConsign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="200dp"
+        android:hint="Monto a consignar"
+        android:textSize="25sp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnConsign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_app"
+        android:text="Consignar"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginHorizontal="40dp"/>
+
+</FrameLayout>
